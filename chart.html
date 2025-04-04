@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bar Chart </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: white;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .chart-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 30px;
+      height: 300px;
+      width: 600px;
+      margin: 0 auto;
+      border-left: 3px solid black;
+      border-bottom: 3px solid grey;
+      padding: 20px;
+      box-sizing: border-box;
+      background: white;
+    }
+
+    .bar {
+      width: 50px;
+      background-color: blue;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      transition: 0.3s ease;
+    }
+
+    .bar:hover {
+      background-color: blue;
+    }
+
+    .bar-value {
+      position: absolute;
+      top: -25px;
+      font-size: 14px;
+      font-weight: bold;
+      color:grey;
+    }
+
+    .labels {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Monthly Sales Report </h2>
+
+  <div class="chart-container">
+    <div class="bar" style="height: 70%;">
+      <div class="bar-value">70</div>
+    </div>
+    <div class="bar" style="height: 50%;">
+      <div class="bar-value">50</div>
+    </div>
+    <div class="bar" style="height: 90%;">
+      <div class="bar-value">90</div>
+    </div>
+    <div class="bar" style="height: 60%;">
+      <div class="bar-value">60</div>
+    </div>
+  </div>
+
+  <div class="labels">
+    <div>Jan</div>
+    <div>Feb</div>
+    <div>Mar</div>
+    <div>Apr</div>
+  </div>
+
+</body>
+</html>
